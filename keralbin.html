@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="/tr">
+<head>
+<meta charset="utf-8">
+<title>Kerala Tourism</title>
+
+<link rel="stylesheet" href="s.css"><script>  
+    function verifyPassword() {  
+      var pw = document.getElementById("pswd").value;  
+      //check empty password field  
+      if(pw == "") {  
+         document.getElementById("message").innerHTML = "**Fill the password please!";  
+         return false;  
+      }  
+       
+     //minimum password length validation  
+      if(pw.length < 8) {  
+         document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+         return false;  
+      }  
+      
+    //maximum length of password validation  
+      if(pw.length > 15) {  
+         document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+         return false;  
+      } else {  
+         alert("successfull");  
+      }  
+    }  
+    </script>  
+      
+</head>
+<body  background="images/kk.JPEG" >
+ <form action="#" class="login" onsubmit ="return verifyPassword()">   
+        <h2>USER LOGIN</h2>
+        <br>
+        <div class="login-content">
+        
+        
+        <input type="text" placeholder="user name">
+        </div>
+    <div class="login-content">
+        
+        <input type = "password" id = "pswd" value = "" placeholder="password">   
+<span id = "message" style="color:white"> </span> <br><br>  
+  
+<!-- Click to verify valid password -->  
+<!-- <input type = "submit" value = "Login">  
+   -->
+        
+        <button id="login-button" >Log in</button>
+        </div>
+        <div class="login-misc">
+        <h5>Need an account?</h5>
+        <a href="#">sign up </a>
+        </div>
+        </form> 
+</body>
+</html>

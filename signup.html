@@ -1,0 +1,60 @@
+<html>  
+<head>  
+<title> signup-form</title>  
+</head>  
+<script>  
+function verifyPassword() {  
+  var pw = document.getElementById("pswd").value;  
+  //check empty password field  
+  if(pw == "") {  
+     document.getElementById("message").innerHTML = "**Fill the password please!";  
+     return false;  
+  }  
+   
+ //minimum password length validation  
+  if(pw.length < 8) {  
+     document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";  
+     return false;  
+  }  
+  
+//maximum length of password validation  
+  if(pw.length > 15) {  
+     document.getElementById("message").innerHTML = "**Password length must not exceed 15 characters";  
+     return false;  
+  } else {  
+     alert("successfull");  
+  }  
+}  
+</script>  
+  
+<body style="background-color:yellow"></body>  
+<center>  
+<h1 style="color:green">SIGN UP</h1>  
+  
+  
+<form onsubmit ="return verifyPassword()">  
+    <p>Please fill in this form to create an account!</p>
+            <hr>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div><br>
+                    <div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div><br>
+                </div>        	
+            </div>
+            <div>
+                <input type="email"  name="email" placeholder="Email" required="required">
+            </div><br>
+<!-- Enter Password -->  
+ 
+<input type = "password" id = "pswd" value = "" placeholder="password">   
+<span id = "message" style="color:red"> </span> <br><br>  
+  
+<!-- Click to verify valid password -->  
+<input type = "submit" value = "Sign up">  
+  
+<!-- Click to reset fields -->  
+<button type = "reset" value = "Reset" >Reset</button>  
+</form>  
+</center>  
+</body>  
+</html>  

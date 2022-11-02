@@ -1,0 +1,103 @@
+*{
+    padding:0;
+    margin:0;
+
+}
+.header
+{
+    height:100%;
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(IMAGES/kan1.jpg);
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    padding-top:20px;
+    text-align:center;
+    color:#fff;
+
+}
+ .header img{
+     width:170px;
+     float:left;
+     
+}
+
+
+.header h1
+{
+    padding-top:150px;
+    padding-bottom:0;
+    font-size:55px;
+}
+.header p
+{
+    margin:18px 0;
+}
+.input-group
+{
+    width:90%;
+    max-width:500px;
+    border-radius:30px;
+    background:white;
+    margin:auto;
+    padding:2px;
+    margin-top:20%;
+}
+
+.form-control
+{
+    border:0 !important;
+    border-radius:30px !important;
+    margin:2px;
+    box-shadow:none !important;
+     
+
+}
+.input-group-text
+{
+    width:100px;
+    background-image:linear-gradient(#00ff7c,#1f3d90);
+    border:0 !important;
+    color:#fff !important;
+    padding:0 25px !important;
+    border-radius:30px !important;
+    box-shadow:none !important;
+
+}
+.features
+{
+    padding:100px 0;
+}
+h1{
+    text-align:center;
+    padding-bottom:30px;
+    font-family:verdana;
+}
+
+
+/* .p-box
+{
+    border:3px solid white;
+    width:22%;
+    float:left;
+    margin-left:10px;
+    height:40em;
+    padding:5px;
+    background-color:#CCCC;
+
+} */
+.p-box a{
+
+text-decoration:none;
+color:red;
+}
+footer{
+    color:white;
+    background-color:black;
+    height:2em;
+    margin-top:35%;
+}
+footer h3
+{
+    text-align:center;
+
+}
